@@ -6,6 +6,7 @@ import "./ProductItem.css"
 const ProductItem = ({ product, onAddToCartClicked }) => (
   <div className = "product-display" >
     <Product 
+      image= {product.image}
       title={product.title}
       price={product.price}
       inventory={product.inventory}  />
@@ -20,6 +21,7 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
 
 ProductItem.propTypes = {
   product: PropTypes.shape({
+    image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     inventory: PropTypes.number.isRequired

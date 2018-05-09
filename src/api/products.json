@@ -1,5 +1,21 @@
 [
-  {"id": 1, "title": "Chronograph", "price": 500.01, "inventory": 2},
-  {"id": 2, "title": "Quartz", "price": 10.99, "inventory": 10},
-  {"id": 3, "title": "Weekender", "price": 19.99, "inventory": 5}
+  {"id": 1,
+    "image": "../../images/chronograph.png", 
+    "title": "Chronograph",
+     "price": 500.01,
+      "inventory": 2},
+  {
+    "id": 2,
+    "image": "../../images/quartz.png",
+    "title": "Quartz",
+    "price": 10.99,
+    "inventory": 10
+  },
+  {
+    "id": 3,
+    "image": "../../images/weekender.png",
+    "title": "Weekender",
+    "price": 19.99,
+    "inventory": 5
+  }
 ]
