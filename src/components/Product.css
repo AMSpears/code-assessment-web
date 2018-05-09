@@ -6,16 +6,21 @@ h4 {
     font-size: 38px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
+    letter-spacing: -0.41px;
+    line-height: 42px;
 }
 #price-tag{
     color: #202020;
     font-size: 21px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: none;
+    letter-spacing: -0.27px;
+    line-height: 23px;
 }
 
 #inventory-log{
     color: #939393;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 15px;
 }

@@ -11,6 +11,8 @@ button {
     border-radius: 100px;
     width: 139px;
     height: 41px;
+    letter-spacing: -0.15px;
+    line-height: 15px;
 }
 button:hover {
     background-color: #407FC0;
