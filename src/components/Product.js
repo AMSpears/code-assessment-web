@@ -6,7 +6,7 @@ const Product = ({ price, inventory, title }) => (
   <div>
     <h4>{title}</h4> 
      <p id= "price-tag">&#36;{price}</p>
-     <p id= "inventory-log">{inventory ? `  ${inventory}` : null} REMAINING</p>
+     <p id= "inventory-log">{inventory ? `  ${inventory}` + " " + "REMAINING" : null } </p>
   </div>
 )
 
