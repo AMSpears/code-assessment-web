@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import "./ProductList.css"
 
 const ProductsList = ({ title, children }) => (
   <div>

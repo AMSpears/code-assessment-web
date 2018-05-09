@@ -1,0 +1,21 @@
+.product-display {
+    background-color: white;
+}
+
+button {
+    background-color: #5E97D1;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border-radius: 100px;
+    width: 139px;
+    height: 41px;
+}
+button:hover {
+    background-color: #407FC0;
+}
+button:disabled {
+    background-color: #5E97D1;
+    opacity: 0.3;
+}
