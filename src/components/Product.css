@@ -1,6 +1,7 @@
 body {
     background-color: #F4F5F7;
 }
+
 h4 {
     color: #000000;
     font-size: 38px;
@@ -8,19 +9,24 @@ h4 {
     font-weight: 100;
     letter-spacing: -0.41px;
     line-height: 42px;
+    margin-top: 37px;
+    margin-bottom: 19px;
 }
-#price-tag{
+#price-tag {
     color: #202020;
     font-size: 21px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: none;
     letter-spacing: -0.27px;
     line-height: 23px;
+    margin-top: 49px;
+    margin-right: 85px;
 }
 
-#inventory-log{
+#inventory-log {
     color: #939393;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 15px;
+    margin-right: 75px;
 }

@@ -1,21 +1,32 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Product from './Product'
+
 import "./ProductItem.css"
 
-const ProductItem = ({ product, onAddToCartClicked }) => (
-  <div className = "product-display" >
-    <Product 
-      image= {product.image}
-      title={product.title}
-      price={product.price}
-      inventory={product.inventory}  />
-      
-    <button
-      onClick={onAddToCartClicked}
-      disabled={product.inventory > 0 ? '' : 'disabled'}>
-      {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
-    </button>
+const ProductItem = ({
+    price,
+    inventory,
+    title,
+    image,product,
+    onAddToCartClicked
+  }) => (
+  <div className = "product-container" >
+   <div className = "details-container">
+    <div className = "product-image" >
+      <img src = { product.image} alt = "Item Image" width = "455" height = "303" />
+    </div>
+    <div className= "product-details-1">
+      <h4> {product.title} </h4> 
+       <p id= "inventory-log" > { product.inventory ? `  ${product.inventory}` + " " + "REMAINING" : null } </p> 
+        <button onClick={onAddToCartClicked} disabled={product.inventory > 0 ? '' : 'disabled'}>
+         {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
+        </button>
+     </div>
+     
+     <div className = "product-details-2" >
+       <p id = "price-tag" > &#36;{product.price}</p>
+      </div>
+    </div>
   </div>
 )
 

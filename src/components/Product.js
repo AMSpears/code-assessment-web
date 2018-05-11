@@ -4,11 +4,17 @@ import "./Product.css"
 
 const Product = ({ price, inventory, title, image }) => (
   <div>
-    <img src={image} alt= "Image"/>
-    <h4>{title}</h4> 
-     <p id= "price-tag">&#36;{price}</p>
-     <p id= "inventory-log">{inventory ? `  ${inventory}` + " " + "REMAINING" : null } </p>
-  </div>
+    
+   <div>
+     <img src={image} alt= "Image"/>
+    </div>
+
+    <div>
+      <h4>{title}</h4> 
+        <p id = "price-tag" > &#36;{price}</p>
+    </div>
+
+ </div>
 )
 
 Product.propTypes = {
