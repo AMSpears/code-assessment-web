@@ -28,9 +28,10 @@ button:disabled {
     display: flex;
 }
 
-.product-image {
+.product-image div {
   flex-basis:  10%;
   margin-right: 30px;
+  padding: 10px;
 }
 
 .product-details-1 {
@@ -40,6 +41,9 @@ flex-basis: 50%;
 flex-basis: 10%;
 }
 
+.cart-button {
+    margin-top:  71px;
+}
 
 @media (max-width: 992px){
     .product-container

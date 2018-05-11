@@ -12,6 +12,7 @@ const Product = ({ price, inventory, title, image }) => (
     <div>
       <h4>{title}</h4> 
         <p id = "price-tag" > &#36;{price}</p>
+        
     </div>
 
  </div>

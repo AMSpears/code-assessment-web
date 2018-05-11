@@ -18,10 +18,16 @@ const ProductItem = ({
     <div className= "product-details-1">
       <h4> {product.title} </h4> 
        <p id= "inventory-log" > { product.inventory ? `  ${product.inventory}` + " " + "REMAINING" : null } </p> 
-        <button onClick={onAddToCartClicked} disabled={product.inventory > 0 ? '' : 'disabled'}>
-         {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
-        </button>
-     </div>
+     <div className = "cart-button" >
+       <button onClick = {
+         onAddToCartClicked
+       }
+     disabled = {
+         product.inventory > 0 ? '' : 'disabled'
+       } > {
+         product.inventory > 0 ? 'Add to cart' : 'Sold Out'
+       } </button> </div>
+       </div>
      
      <div className = "product-details-2" >
        <p id = "price-tag" > &#36;{product.price}</p>

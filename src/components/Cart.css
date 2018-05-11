@@ -1,2 +1,48 @@
 
+/* empty cart style */
+#cart-header {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 28px; 
+   color: #000000;
+   text-align: auto;
+   letter-spacing: -0.8;
+   line-height: 32px;
+   border-bottom: 1px solid #e8e8e8;
+}
+#empty-cart-image {
+    color: #e1e1e1;
+}
+.empty-cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+}
+#empty-cart-details {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    color: #919191;
+    letter-spacing: -0.44px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.amount-container {
+    display: flex;
+    justify-content: space-between;
+}
+#amount-description {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+     color: #9D9D9D;
+}
+#amount {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2a2a2a;
+}
+
+#checkout-button {
+    width: 100%;
+}
