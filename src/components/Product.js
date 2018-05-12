@@ -2,20 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import "./Product.css"
 
-const Product = ({ price, inventory, title, image }) => (
-  <div>
-    
-   <div>
-     <img src={image} alt= "Image"/>
-    </div>
+const Product = ({ price, inventory, title, image, quantity }) => (
 
-    <div>
-      <h4>{title}</h4> 
-        <p id = "price-tag" > &#36;{price}</p>
-        
-    </div>
+  <div className = "cart-container">
 
- </div>
+     <div className = "imgage-container">
+       <img id= "image" src={image} alt= "Image"/>
+     </div>
+
+     <div className = "cart-details">
+       <h4>{title}</h4> 
+         <p id = "price-tag" > &#36;{price}</p>
+         <p id = "remove-tag"> Remove </p>
+       <div className= "btns-container">
+        <button id = "btn-minus"> - </button> 
+          { quantity } 
+        <button id = "btn-plus"> + </button> 
+        </div> 
+     </div>
+   </div>
 )
 
 Product.propTypes = {

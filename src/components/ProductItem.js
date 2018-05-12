@@ -10,10 +10,10 @@ const ProductItem = ({
     image,product,
     onAddToCartClicked
   }) => (
-  <div className = "product-container" >
-   <div className = "details-container">
+  <div>
+   <div className = "product-container">
     <div className = "product-image" >
-      <img src = { product.image} alt = "Item Image" width = "455" height = "303" />
+      <img id= "image" src = { product.image} alt = "Item Image" max-width = "100%" height = "auto" />
     </div>
     <div className= "product-details-1">
       <h4> {product.title} </h4> 
